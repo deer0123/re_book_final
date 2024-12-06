@@ -1,0 +1,54 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    url: jdbc:mysql://re-book-rds.cbuic22aqdh7.ap-northeast-2.rds.amazonaws.com:3306/wwww?serverTimezone=Asia/Seoul
+    username: root
+    password: play123!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+  data:
+    redis:
+      host: redis
+      port: 6379
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: book4wtest@gmail.com
+    password: ddhtkrwxrcjmkxte
+    properties:
+      smtp:
+        auth: true
+        starttls.enable: true
+
+# log level setting
+logging:
+  level:
+    root: info
+    com:
+      spring:
+        jpa: debug
+    org:
+      hibernate:
+        SQL: debug
+
+jwt:
+  expiration: 30
+  secretKey: rI9KLc/nWq+0ehvbQXjST52lIHi+A4PurdKwAe0ZcN+0LE1QBv7p0qhFxzxcv8PaigtMXpJHdIl6p4ILsLDasA==
+
+  expirationRt: 14400
+  secretKeyRt: lGBm6kwqJoKjLioZfyYJ+OTstjyczTbf7tJXar1pQ2PDSeg5LZQ30DXzxcvM7zKiysBfPkdv6KTVOJ+UcL5C6g==
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
