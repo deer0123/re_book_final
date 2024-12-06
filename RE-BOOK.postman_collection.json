@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "fad9a20d-e95e-42bc-ac31-f3760eb4abfd",
+		"name": "RE:BOOK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38853273"
+	},
+	"item": [
+		{
+			"name": "좋아요 토글",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/board/detail/01248c3f-b3d9-425d-abfd-6701e218488a/toggle-like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"board",
+						"detail",
+						"01248c3f-b3d9-425d-abfd-6701e218488a",
+						"toggle-like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "로그인",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"t@0.com\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

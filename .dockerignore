@@ -1,0 +1,24 @@
+# 리액트 관련 제외 (re-book-front 폴더 안)
+re-book-front/node_modules/
+re-book-front/npm-debug.log
+re-book-front/yarn-debug.log
+re-book-front/yarn-error.log
+re-book-front/dist/
+
+# 스프링 관련 제외 (RE_BOOK 폴더 안)
+RE_BOOK/target/
+RE_BOOK/.mvn/
+RE_BOOK/.idea/
+RE_BOOK/.git/
+
+# IDE 관련 파일들 제외 (VSCode, IntelliJ 등)
+.vscode/
+../.idea/
+
+# Git 관련 파일들 제외
+.git/
+.gitignore
+
+# Docker 관련 파일 제외
+Dockerfile*
+.dockerignore

@@ -1,0 +1,24 @@
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis-container
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+
+  spring-app:
+    image: deer0123/re_book:latest
+    container_name: spring-app
+    ports:
+      - "80:80"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://re-book-rds.cbuic22aqdh7.ap-northeast-2.rds.amazonaws.com:3306/wwww
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: play123!
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
