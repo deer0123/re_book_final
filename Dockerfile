@@ -1,5 +1,5 @@
 # 첫번째 스테이지 -> 빌드 영역
-# 도커파일로 gradle build 진행할 때는 jdk-slim 사용하세요!
+# 도커파일로 gradle build 진행할 때는 jdk-slim 사용하세요!!
 FROM openjdk:17-jdk-slim AS build
 
 # 소스코드 복사
