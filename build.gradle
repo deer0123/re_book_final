@@ -11,6 +11,7 @@ bootJar {
     archiveBaseName = 're_book_final'  // JAR 파일 이름 설정
     version = '0.0.1-SNAPSHOT'  // 버전 설정
     enabled = true; // 실행 가능한 JAR만 생성하도록 설정
+    mainClassName = 'com.re_book.RebookFinalApplication'
 }
 
 jar {
