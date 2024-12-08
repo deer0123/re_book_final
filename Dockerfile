@@ -11,7 +11,7 @@ COPY gradle /app/gradle
 COPY build.gradle /app/
 COPY settings.gradle /app/
 
-# Gradle 종속성 캐싱 (build.gradle, settings.gradle 등...에 변경이 없으면)
+# G성 radle 종속캐싱 (build.gradle, settings.gradle 등...에 변경이 없으면)
 # 기존에 가지고 있던 내용을 그대로 사용함.
 RUN chmod +x ./gradlew
 RUN ./gradlew dependencies --no-daemon
