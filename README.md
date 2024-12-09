@@ -1,4 +1,4 @@
-# ReBook(Book4W 업그레이드) 도서 리뷰 웹사이트 프로젝트
+# 최종 ReBook(중간 Book4W) 도서 리뷰 웹사이트 프로젝트
 
 ![화면 캡처 2024-10-30 175857](https://github.com/user-attachments/assets/65360000-e1e6-46b3-9615-b35ee417bd8c)
 
@@ -27,7 +27,7 @@
 - <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
 - <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/notion-00148C?style=for-the-badge&logo=notion&logoColor=white">
 
-### 2.3.2. 최종
+#### 2.3.2. 최종
 - <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=REACT&logoColor=red">
 - <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"> <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white">
 - <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"> <img src="https://img.shields.io/badge/redis-FF4438?style=for-the-badge&logo=redis&logoColor=blue">
@@ -146,12 +146,3 @@
 >- 정적 CSV 데이터를 데이터베이스에 자동으로 입력하는 일은 상대적으로 수월하였다. 처음 기획할 때 정적 DB를 고려해서 시작하자는 의견을 낸 입장에서 미리 머리속에서 그리고 있었던 일이었고 관련 정보를 쉽게 얻어 구현할 수 있었다.
 >#### 7.4.2. 앞으로
 >- 이번 프로젝트는 전체적인 흐름을 이해하고, 학습 동기를 느끼게 해주어 그 가치가 충분하다. 백엔드도 갈 길이 멀지만, 종종 프런트를 수정해야 하는 일을 마주했을 때 HTML과 자바스크립트에 대한 두려움으로 어쩌지 못하는 일이 있어 복습의 필요를 느꼈다. 그리고 동료들이 구현한 CRUD 게시판과 기타 기능들을 온전히 내 힘으로 구현하고 싶다. 시간이 허락하는 한 부족한 부분을 지속적으로 학습할 것이다.
-
->## 8. 동작법 (인텔리제이 기준)
->1. 깃클론을 받는다.
->2. MYsql에서 wwww 라는 이름으로 DB를 생성한다. ( application.yml 에서 서버이름 수정가능)
->3. application.yml 에서 ddl-auto : create로 설정
->4. 서버 정상 가동 후 종료
->5. application.yml 에서 ddl-auto : update로 설정
->6. 테스트 클래스에서 BookSetTest 클래스의 setBookData 메서드 실행 ( TestAccount 메서드도 존재. 필요시 사용)
->7. 서버 가동 후 체험
