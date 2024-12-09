@@ -9,14 +9,16 @@ import com.re_book.user.dto.LoginRequestDTO;
 import com.re_book.user.dto.MemberRequestDTO;
 import com.re_book.user.service.MemberService;
 import jakarta.mail.MessagingException;
-import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,11 +34,6 @@ public class MemberController {
 
     @Qualifier("user-template") // RedisTemplate이 여러 개 빈 등록되었을 경우 명시한다.
     private final RedisTemplate<String, Object> redisTemplate;
-
-    @GetMapping("/sign-in")
-    public String signIn() {
-        return "sign-in";
-    }
 
     @PostMapping("/sign-in")
     public ResponseEntity<CommonResDto> signIn(@RequestBody LoginRequestDTO dto) {
@@ -68,11 +65,6 @@ public class MemberController {
         CommonResDto resDto
                 = new CommonResDto(HttpStatus.OK, "로그아웃 성공!!", logInfo);
         return new ResponseEntity<>(resDto, HttpStatus.OK);
-    }
-
-    @GetMapping("/sign-up")
-    public String signUp() {
-        return "sign-up";
     }
 
     @PostMapping("/sign-up")
