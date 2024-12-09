@@ -88,8 +88,7 @@
 ---
 ## 5. WBS
 <img width="1035" alt="WBS" src="https://github.com/user-attachments/assets/f67c4ec9-6073-4452-b313-d6ec43ebe8e9">
-![image](https://github.com/user-attachments/assets/f512b7c5-552b-4b91-a8cf-7ef1a6c62df0)
-
+<img width="1035" alt="WBS" scr="https://github.com/user-attachments/assets/f512b7c5-552b-4b91-a8cf-7ef1a6c62df0">
 
 ---
 ## 6. API
