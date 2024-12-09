@@ -1,4 +1,4 @@
-# Book4W 도서 리뷰 웹사이트 프로젝트
+# ReBook(Book4W 업그레이드) 도서 리뷰 웹사이트 프로젝트
 
 ![화면 캡처 2024-10-30 175857](https://github.com/user-attachments/assets/65360000-e1e6-46b3-9615-b35ee417bd8c)
 
@@ -84,12 +84,13 @@
 
 ---
 ## 6. API
-<img width="967" alt="API1" src="https://github.com/user-attachments/assets/57d947ac-5adf-4a20-9089-2ea76c5da5f5">
-<img width="968" alt="API2" src="https://github.com/user-attachments/assets/eea1eade-270c-4557-9e12-f71a6b2bfe42">
-<img width="967" alt="API3" src="https://github.com/user-attachments/assets/982afce3-a3f8-4b90-a62a-3e1ab73a1153">
+<img width="935" alt="API 명세서 1" src="https://github.com/user-attachments/assets/5b9ae5c9-9ed5-475e-8c15-30c9ff9147a4">
+<img width="936" alt="API 명세서 2" src="https://github.com/user-attachments/assets/9ba2f0af-4b58-4582-8c0d-5a62712adf77">
+<img width="937" alt="API 명세서 3" src="https://github.com/user-attachments/assets/f08b4a12-1aa1-4bd0-a8e0-fe9b8205e0c2">
+<img width="937" alt="API 명세서 4" src="https://github.com/user-attachments/assets/618ec477-3e3c-4e0a-8a56-4646e1b1c760">
 
 ---
-## 7. 회고
+## 7. 중간 회고
 ### 7.1. 박성찬
 >#### 7.1.1. 프로젝트에 앞서 마음가짐
 >- 협업 경험에 집중하기, 기능 구현은 부차적으로
@@ -137,6 +138,7 @@
 >- 정적 CSV 데이터를 데이터베이스에 자동으로 입력하는 일은 상대적으로 수월하였다. 처음 기획할 때 정적 DB를 고려해서 시작하자는 의견을 낸 입장에서 미리 머리속에서 그리고 있었던 일이었고 관련 정보를 쉽게 얻어 구현할 수 있었다.
 >#### 7.4.2. 앞으로
 >- 이번 프로젝트는 전체적인 흐름을 이해하고, 학습 동기를 느끼게 해주어 그 가치가 충분하다. 백엔드도 갈 길이 멀지만, 종종 프런트를 수정해야 하는 일을 마주했을 때 HTML과 자바스크립트에 대한 두려움으로 어쩌지 못하는 일이 있어 복습의 필요를 느꼈다. 그리고 동료들이 구현한 CRUD 게시판과 기타 기능들을 온전히 내 힘으로 구현하고 싶다. 시간이 허락하는 한 부족한 부분을 지속적으로 학습할 것이다.
+
 >## 8. 동작법 (인텔리제이 기준)
 >1. 깃클론을 받는다.
 >2. MYsql에서 wwww 라는 이름으로 DB를 생성한다. ( application.yml 에서 서버이름 수정가능)
