@@ -10,4 +10,5 @@ import lombok.*;
 @Builder
 public class ReviewUpdateRequestDTO {
     private String content;
+    private int rating;
 }

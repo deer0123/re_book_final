@@ -10,6 +10,7 @@ import com.re_book.repository.BookRepository;
 import com.re_book.repository.MemberRepository;
 import com.re_book.repository.ReviewRepository;
 import jakarta.persistence.EntityNotFoundException;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -21,6 +22,7 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 @Slf4j
+@Transactional
 public class ReviewService {
 
     private final ReviewRepository reviewRepository;
@@ -32,7 +34,7 @@ public class ReviewService {
 
         // Review를 ReviewResponseDTO로 변환
         return reviews.map(review -> ReviewResponseDTO.builder()
-                .id(review.getId())
+                .reviewId(review.getId())
                 .content(review.getContent())
                 .rating(review.getRating())
                 .memberUuid(review.getMember().getId())
@@ -41,7 +43,7 @@ public class ReviewService {
                 .build());
     }
 
-    public Review register(String bookId, ReviewPostRequestDTO dto, String userInfo) {
+    public ReviewResponseDTO register(String bookId, ReviewPostRequestDTO dto, String userInfo) {
         Book book = bookRepository.findById(bookId)
                 .orElseThrow(() -> new EntityNotFoundException("책을 찾을 수 없습니다."));
 
@@ -49,7 +51,6 @@ public class ReviewService {
                 .orElseThrow(() -> new EntityNotFoundException("회원 정보를 찾을 수 없습니다."));
 
         Review review = Review.builder()
-                .id(UUID.randomUUID().toString())
                 .member(member)
                 .book(book)
                 .content(dto.getContent())
@@ -62,10 +63,10 @@ public class ReviewService {
         book.setRating(book.getRating() + dto.getRating());
         bookRepository.save(book);
 
-        return review;
+        return new ReviewResponseDTO(review);
     }
 
-    public void updateReview(String reviewId, String newContent, String userId) {
+    public void updateReview(String reviewId, String newContent, String userId, int newRating) {
         Review review = reviewRepository.findById(reviewId)
                 .orElseThrow(() -> new EntityNotFoundException("리뷰를 찾을 수 없습니다."));
 
@@ -75,6 +76,7 @@ public class ReviewService {
         }
 
         review.setContent(newContent);
+        review.setRating(newRating);
         reviewRepository.save(review);
     }
 

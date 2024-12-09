@@ -3,6 +3,7 @@ package com.re_book.board.controller;
 
 import com.re_book.board.dto.request.ReviewPostRequestDTO;
 import com.re_book.board.dto.request.ReviewUpdateRequestDTO;
+import com.re_book.board.dto.response.ReviewResponseDTO;
 import com.re_book.board.service.ReviewService;
 import com.re_book.common.auth.TokenUserInfo;
 import com.re_book.common.dto.CommonErrorDto;
@@ -52,14 +53,14 @@ public class ReviewController {
 
         try {
             String memberUuid = userInfo.getId();
-            Review savedReview = reviewService.register(bookId, dto, memberUuid);
+            ReviewResponseDTO savedReview = reviewService.register(bookId, dto, memberUuid);
             response.put("success", true);
             response.put("message", "리뷰가 성공적으로 작성되었습니다.");
-            response.put("reviewId", savedReview.getId());
-            response.put("memberName", savedReview.getMember().getName());
+            response.put("reviewId", savedReview.getReviewId());
+            response.put("memberName", savedReview.getMemberName());
             response.put("content", savedReview.getContent());
             response.put("rating", savedReview.getRating());
-            response.put("memberId",savedReview.getMember().getId());
+            response.put("memberId",savedReview.getMemberUuid());
             response.put("createDate", savedReview.getCreatedDate());
 
             CommonResDto resDto
@@ -99,7 +100,7 @@ public class ReviewController {
 
         try {
             String memberUuid = userInfo.getId();
-            reviewService.updateReview(reviewId, dto.getContent(), memberUuid);
+            reviewService.updateReview(reviewId, dto.getContent(), memberUuid, dto.getRating());
             Review updatedReview = reviewService.findById(reviewId);
 
             response.put("success", true);
@@ -147,8 +148,6 @@ public class ReviewController {
         }
         Map<String, Object> response = new HashMap<>();
 
-
-
         try {
             String memberUuid = userInfo.getId();
             reviewService.deleteReview(reviewId, memberUuid);
@@ -174,10 +173,5 @@ public class ReviewController {
                     = new CommonErrorDto(HttpStatus.INTERNAL_SERVER_ERROR, e.getMessage());
             return new ResponseEntity<>(errorDto, HttpStatus.INTERNAL_SERVER_ERROR);
         }
-
     }
-
 }
-
-
-

@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Setter
 
 public class ReviewResponseDTO {
-    private final String id;
+    private final String reviewId;
     private int rating;
     private final String content;
     private final String memberName;
@@ -26,7 +26,7 @@ public class ReviewResponseDTO {
 
 
     public ReviewResponseDTO(Review review) {
-        this.id = review.getId();
+        this.reviewId = review.getId(); // id를 reviewId로 변환
         this.rating = review.getRating();
         this.content = review.getContent();
         this.memberName = review.getMember().getName();
@@ -37,5 +37,3 @@ public class ReviewResponseDTO {
 
 
 }
-
-
