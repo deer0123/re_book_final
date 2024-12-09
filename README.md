@@ -37,7 +37,11 @@
 ## 3. 주요 기능별 논리 구조
 ### 3.1. 도서 리뷰, 평점, 좋아요 기능을 기반한 도서 추천 및 조회
 #### 3.1.1. 도서 추천
+##### 중간
 ![홈화면](https://github.com/user-attachments/assets/ebdfb0a5-6483-4f9c-8e79-114f5339e9fc)
+
+##### 최종
+![도서추천](https://github.com/user-attachments/assets/78d1b558-abef-41a2-8a3b-59058b453748)
 - 리뷰 수, 평점 수, 좋아요 수를 기준으로 기준값이 높은 도서 중 3개를 각각 골라 추천도서로 제시합니다.
 - 각 기준별 화면은 일정시간이 지나면 슬라이드 효과로 자동 전환됩니다.
 - 사용자가 화살표 클릭으로 화면을 수동 전환을 할 수 있습니다.
@@ -88,8 +92,7 @@
 ---
 ## 5. WBS
 <img width="1035" alt="WBS" src="https://github.com/user-attachments/assets/f67c4ec9-6073-4452-b313-d6ec43ebe8e9">
-<img width="1035" alt="WBS" scr="https://github.com/user-attachments/assets/fab1c5cd-b2a4-4f79-9792-b47da826eb6c)">
-![스크린샷 2024-12-09 164515](https://github.com/user-attachments/assets/fab1c5cd-b2a4-4f79-9792-b47da826eb6c)
+![스크린샷 2024-12-09 164515](https://github.com/user-attachments/assets/06d01e06-f6c4-4ad4-9457-f4651ae86d3f)
 
 
 ---
