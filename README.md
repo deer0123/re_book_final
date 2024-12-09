@@ -46,6 +46,8 @@
 - 해당 카드를 선택하여 상세정보를 확인합니다.
 
 #### 3.1.2. 도서 목록 조회
+![2](https://github.com/user-attachments/assets/7b50c674-a8d9-4620-acc8-d7291097b31c)
+
 ![도서목록](https://github.com/user-attachments/assets/b9b23f40-82c1-4365-9fef-1c5666c5ef73)
 - 한 페이지에 9개 카드 목록을 제시하고, 도서의 주요 정보를 카드에 표시합니다.
 - '좋아요 수', '리뷰 수', '평점 수' 순으로 카드 목록을 정렬합니다.
@@ -54,6 +56,8 @@
 - 해당 카드를 선택하여 상세정보를 확인합니다.
 
 #### 3.1.3. 도서 상세정보 & 리뷰, 평점, 좋아요 입력
+![3](https://github.com/user-attachments/assets/55ddf5d3-60d1-44eb-afc6-118ec78a7188)
+
 ![상세정보](https://github.com/user-attachments/assets/04c3bbdf-cd70-4b84-b4c5-4f466680296d)
 - 도서의 주요 정보 그리고 회원이 입력한 리뷰와 평점을 표시합니다.
 - 회원은 좋아요, 리뷰, 평점을 입력할 수 있고, 입력한 내용을 수정 또는 삭제할 수 있습니다.
@@ -74,6 +78,8 @@
 - 새로운 닉네임을 입력하여 수정합니다.
 
 #### 3.2.4. 나의 좋아요 & 나의 리뷰 조회
+![4](https://github.com/user-attachments/assets/f990f157-5f59-46b8-a345-6f2b3c81f8b4)
+
 ![나의 리뷰 좋아요](https://github.com/user-attachments/assets/7f97dd98-91bb-419a-bc6d-427f78fe6ea3)
 - 회원이 작성한 '리뷰', '평점', '좋아요' 기록을 목록으로 확인합니다.
 - 해당 책을 선택하여 상세정보를 확인합니다.
