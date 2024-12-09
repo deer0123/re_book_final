@@ -1,7 +1,9 @@
 # 최종 ReBook(중간 Book4W) 도서 리뷰 웹사이트 프로젝트
+## 최종
+<img width="1237" alt="홈페이지" src="https://github.com/user-attachments/assets/0067ea4d-6d0c-4779-b82e-9c13501e7974">
 
+## 중간
 ![화면 캡처 2024-10-30 175857](https://github.com/user-attachments/assets/65360000-e1e6-46b3-9615-b35ee417bd8c)
-
 
 ## 1. 서비스 개요
 
@@ -21,27 +23,27 @@
 ### 2.2. 팀원
 - 박성찬(PM, Back-End), 김원(Back-End), 배승준(Front-End), 김성철(Back-End)
 ### 2.3. 기술 스택
-#### 2.3.1. 중간
-- <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
-- <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"> <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white">
-- <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
-- <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/notion-00148C?style=for-the-badge&logo=notion&logoColor=white">
-
-#### 2.3.2. 최종
+#### 2.3.1. 최종
 - <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=REACT&logoColor=red">
 - <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"> <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white">
 - <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"> <img src="https://img.shields.io/badge/redis-FF4438?style=for-the-badge&logo=redis&logoColor=blue">
 - <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/notion-00148C?style=for-the-badge&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/githubactions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
 
+#### 2.3.2. 중간
+- <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+- <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"> <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white">
+- <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
+- <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/notion-00148C?style=for-the-badge&logo=notion&logoColor=white">
+
 ---
 ## 3. 주요 기능별 논리 구조
 ### 3.1. 도서 리뷰, 평점, 좋아요 기능을 기반한 도서 추천 및 조회
 #### 3.1.1. 도서 추천
+##### 최종
+![1](https://github.com/user-attachments/assets/18f55ee6-7c1a-4191-95c2-3939152fb735)
+
 ##### 중간
 ![홈화면](https://github.com/user-attachments/assets/ebdfb0a5-6483-4f9c-8e79-114f5339e9fc)
-
-##### 최종
-![도서추천](https://github.com/user-attachments/assets/78d1b558-abef-41a2-8a3b-59058b453748)
 - 리뷰 수, 평점 수, 좋아요 수를 기준으로 기준값이 높은 도서 중 3개를 각각 골라 추천도서로 제시합니다.
 - 각 기준별 화면은 일정시간이 지나면 슬라이드 효과로 자동 전환됩니다.
 - 사용자가 화살표 클릭으로 화면을 수동 전환을 할 수 있습니다.
