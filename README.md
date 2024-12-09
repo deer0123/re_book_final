@@ -91,9 +91,11 @@
 
 ---
 ## 5. WBS
-<img width="1035" alt="WBS" src="https://github.com/user-attachments/assets/f67c4ec9-6073-4452-b313-d6ec43ebe8e9">
-
+### 5.1. 최종
 ![wbs](https://github.com/user-attachments/assets/d86999e2-45bf-4856-94cc-8a04a657ec78)
+
+### 5.2. 중간
+<img width="1035" alt="WBS" src="https://github.com/user-attachments/assets/f67c4ec9-6073-4452-b313-d6ec43ebe8e9">
 
 ---
 ## 6. API
