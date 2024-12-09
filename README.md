@@ -92,8 +92,7 @@
 ---
 ## 5. WBS
 <img width="1035" alt="WBS" src="https://github.com/user-attachments/assets/f67c4ec9-6073-4452-b313-d6ec43ebe8e9">
-![스크린샷 2024-12-09 164515](https://github.com/user-attachments/assets/06d01e06-f6c4-4ad4-9457-f4651ae86d3f)
-
+![스크린샷 2024-12-09 164515](https://github.com/user-attachments/assets/d86999e2-45bf-4856-94cc-8a04a657ec78)
 
 ---
 ## 6. API
