@@ -92,7 +92,9 @@
 ---
 ## 5. WBS
 <img width="1035" alt="WBS" src="https://github.com/user-attachments/assets/f67c4ec9-6073-4452-b313-d6ec43ebe8e9">
+
 ![wbs](https://github.com/user-attachments/assets/d86999e2-45bf-4856-94cc-8a04a657ec78)
+
 ![스크린샷 2024-12-09 115847](https://github.com/user-attachments/assets/a5077c10-c62b-4d29-a43d-03fbcdf214d8)
 
 ---
