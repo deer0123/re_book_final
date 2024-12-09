@@ -36,26 +36,29 @@
 ### 3.1. 도서 리뷰, 평점, 좋아요 기능을 기반한 도서 추천 및 조회
 #### 3.1.1. 도서 추천
 ##### 최종
-![1](https://github.com/user-attachments/assets/18f55ee6-7c1a-4191-95c2-3939152fb735)
-
-##### 중간
-![홈화면](https://github.com/user-attachments/assets/ebdfb0a5-6483-4f9c-8e79-114f5339e9fc)
 - 리뷰 수, 평점 수, 좋아요 수를 기준으로 기준값이 높은 도서 중 3개를 각각 골라 추천도서로 제시합니다.
 - 각 기준별 화면은 일정시간이 지나면 슬라이드 효과로 자동 전환됩니다.
 - 사용자가 화살표 클릭으로 화면을 수동 전환을 할 수 있습니다.
 - 해당 카드를 선택하여 상세정보를 확인합니다.
 
-#### 3.1.2. 도서 목록 조회
-##### 최종
-![2](https://github.com/user-attachments/assets/7b50c674-a8d9-4620-acc8-d7291097b31c)
+![1](https://github.com/user-attachments/assets/18f55ee6-7c1a-4191-95c2-3939152fb735)
 
 ##### 중간
-![도서목록](https://github.com/user-attachments/assets/b9b23f40-82c1-4365-9fef-1c5666c5ef73)
+![홈화면](https://github.com/user-attachments/assets/ebdfb0a5-6483-4f9c-8e79-114f5339e9fc)
+
+#### 3.1.2. 도서 목록 조회
 - 한 페이지에 9개 카드 목록을 제시하고, 도서의 주요 정보를 카드에 표시합니다.
 - '좋아요 수', '리뷰 수', '평점 수' 순으로 카드 목록을 정렬합니다.
 - 페이징 기능을 제공합니다.
 - 검색어를 입력하여 도서를 검색합니다.
 - 해당 카드를 선택하여 상세정보를 확인합니다.
+
+##### 최종
+![2](https://github.com/user-attachments/assets/7b50c674-a8d9-4620-acc8-d7291097b31c)
+
+##### 중간
+![도서목록](https://github.com/user-attachments/assets/b9b23f40-82c1-4365-9fef-1c5666c5ef73)
+
 
 #### 3.1.3. 도서 상세정보 & 리뷰, 평점, 좋아요 입력
 ##### 최종
