@@ -84,10 +84,12 @@
 ## 4. 데이터베이스 ERD
 ![image](https://github.com/user-attachments/assets/6f9790c8-71e6-4103-b19c-35d1852f798d)
 
+
 ---
 ## 5. WBS
 <img width="1035" alt="WBS" src="https://github.com/user-attachments/assets/f67c4ec9-6073-4452-b313-d6ec43ebe8e9">
-![스크린샷 2024-12-09 164515](https://github.com/user-attachments/assets/fa5b4728-ef1b-476f-b2ec-ae2354466298)
+![image](https://github.com/user-attachments/assets/f512b7c5-552b-4b91-a8cf-7ef1a6c62df0)
+
 
 ---
 ## 6. API
