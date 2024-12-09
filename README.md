@@ -90,7 +90,7 @@
 - 해당 책을 선택하여 상세정보를 확인합니다.
 
 ##### 최종
-![4](https://github.com/user-attachments/assets/f990f157-5f59-46b8-a345-6f2b3c81f8b4)
+![5](https://github.com/user-attachments/assets/e9a0db2b-5e45-4872-a303-bcb935e509e9)
 
 ##### 중간
 ![나의 리뷰 좋아요](https://github.com/user-attachments/assets/7f97dd98-91bb-419a-bc6d-427f78fe6ea3)
