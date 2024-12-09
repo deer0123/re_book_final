@@ -11,12 +11,14 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class CSVService {
 
     @Autowired
     private BookRepository bookRepository;
+    private final Random random = new Random();
 
     public void saveCSVData() {
         // 데이터베이스에 이미 데이터가 존재하는지 확인
@@ -43,8 +45,32 @@ public class CSVService {
                 books.add(book);
             }
             bookRepository.saveAll(books);
+            initializeDataAtStartup();
         } catch (Exception e) {
             throw new RuntimeException("CSV 파일을 처리하는 중 오류가 발생했습니다: " + e.getMessage());
         }
+    }
+
+    public  void initializeBookData() {
+        List<Book> books = bookRepository.findAll();
+
+        for (Book book : books) {
+            double desiredAverageRating = 1.3 + (random.nextDouble() * (4.7 - 1.3)); // 1.3 ~ 4.7 랜덤값 생성
+            int rating = random.nextInt(200) + 1; // 총 평점 수 (1 ~ 400)
+            int reviewCount = (int) Math.max(Math.ceil((double) rating / desiredAverageRating), 1);
+            if (reviewCount < 1) {
+                reviewCount = 1; // 최소 1개의 리뷰는 필수
+            }
+
+            book.setRating(rating);
+            book.setReviewCount(reviewCount);
+            book.setLikeCount(random.nextInt(300)); // 랜덤으로 좋아요 수 설정
+
+            bookRepository.save(book);
+        }
+    }
+
+    public  void initializeDataAtStartup() {
+        initializeBookData();
     }
 }
