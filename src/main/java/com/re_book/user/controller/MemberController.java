@@ -44,7 +44,7 @@ public class MemberController {
         log.info("token: {}", token);
         log.info("memberUuid {}",member.getId());
         String refreshToken
-                = jwtTokenProvider.createRefreshToken(member.getId(), member.getRole().toString(),member.getName());
+                = jwtTokenProvider.createRefreshToken(member.getId(), member.getRole().toString(),member.getName() + "!!!");
 
         redisTemplate.opsForValue().set(member.getEmail(), refreshToken, 240, TimeUnit.HOURS);
 
