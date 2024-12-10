@@ -103,11 +103,16 @@
 - 회원은 '로그인', '회원가입'에 접근할 수 없습니다.
 
 ---
-## 4. 데이터베이스 ERD
+## 4. 배포ㆍ자동화
+- Front-End : Github Actions에서 빌드 후 AWS S3에 배포한다.
+- Back-End : Github Actions에서 빌드 후 Docker 이미지를 Docker Hub에 보내고, Dokcer Hub로부터 Docker 이미지를 AWS EC2에 가져와서 배포한다.
+
+---
+## 5. 데이터베이스 ERD
 ![image](https://github.com/user-attachments/assets/6f9790c8-71e6-4103-b19c-35d1852f798d)
 
 ---
-## 5. WBS
+## 6. WBS
 ##### 최종
 ![wbs](https://github.com/user-attachments/assets/d86999e2-45bf-4856-94cc-8a04a657ec78)
 
@@ -115,17 +120,13 @@
 <img width="1035" alt="WBS" src="https://github.com/user-attachments/assets/f67c4ec9-6073-4452-b313-d6ec43ebe8e9">
 
 ---
-## 6. API
+## 7. API
 <img width="935" alt="API 명세서 1" src="https://github.com/user-attachments/assets/5b9ae5c9-9ed5-475e-8c15-30c9ff9147a4">
 <img width="936" alt="API 명세서 2" src="https://github.com/user-attachments/assets/9ba2f0af-4b58-4582-8c0d-5a62712adf77">
 <img width="937" alt="API 명세서 3" src="https://github.com/user-attachments/assets/f08b4a12-1aa1-4bd0-a8e0-fe9b8205e0c2">
 <img width="937" alt="API 명세서 4" src="https://github.com/user-attachments/assets/618ec477-3e3c-4e0a-8a56-4646e1b1c760">
 
 --
-## 7. 배포ㆍ자동화
-- Front-End : 빌드 후 AWS S3에 배포
-- Back-End : 빌드 후 이미지를 Docker Hub에 보내고, AWS EC2에서 Dokcer Hub로 부터 이미지를 가져와서 배포
-
 ## 8. 최종ㆍ중간 회고
 ### 8.1. 박성찬
 >#### 8.1.1. 최종
